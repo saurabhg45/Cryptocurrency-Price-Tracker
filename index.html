@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cryptocurrency Price Tracker </title>
-
+    <title>Cryptocurrency Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-
 <body>
-    <h1>Cryptocurrency Price Tracker </h1>
-    <h3 id="name"></h3>
-    <img src="" width="50px" id="img">
-
-    <p id="price"></p>
-    <p id="market-rank"></p>
-    <input type="text" placeholder="Search" id="search">
-    <select name="" id="">
-       <option value="">Select Cryptocurrency</option>
-       <option value="">Bitcoin</option>
-       <option value="">Ethereum</option>
-       <option value="">Tether</option>
-       <option value="">Solana</option>
-        
-    </select>
-    <button id="fetch-data">Enter</button>
-    <button id="refresh">Refresh</button>
-
-
+    <header>
+        <h1>Cryptocurrency Price Tracker</h1>
+    </header>
+    <main class="tracker-container">
+        <div class="search-area">
+            <input type="text" id="search" placeholder="Enter Cryptocurrency Name">
+            <button id="fetch-data">Search</button>
+            <button id="refresh">Reset</button>
+        </div>
+        <div class="crypto-info">
+            <img src="" alt="Crypto Image" id="img">
+            <h3 id="name"></h3>
+            <p id="price"></p>
+            <p id="market-rank"></p>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
-
 </html>
